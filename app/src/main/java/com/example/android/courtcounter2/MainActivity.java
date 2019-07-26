@@ -82,13 +82,16 @@ public class MainActivity extends AppCompatActivity {
     public void FinalScore (View View) {
         EditText editTeamA = findViewById(R.id.editTextTeamA);
         String editTextNameTeamA = editTeamA.getText().toString();
+
         EditText editTeamB = findViewById(R.id.editTextTeamB);
         String editTextNameTextB = editTeamB.getText().toString();
+
         String finalScore;
         finalScore = editTextNameTeamA + ": " + scoreTeamA + " - " + scoreTeamB + " :" + editTextNameTextB;
         displayFinalScore (finalScore);
         scoreTeamA = 0;
         scoreTeamB = 0;
+
         displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
     }
